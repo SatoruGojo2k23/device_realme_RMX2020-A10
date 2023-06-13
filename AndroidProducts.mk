@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_RMX2020.mk
+    $(LOCAL_DIR)/du_RMX2020.mk

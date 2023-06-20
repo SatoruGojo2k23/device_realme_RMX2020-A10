@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common Resuduection Remix stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := du_RMX2020
+PRODUCT_NAME := cherish_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme G70 Series
@@ -34,8 +34,7 @@ PRODUCT_MANUFACTURER := realme
 TARGET_BOOT_ANIMATION_RES := 720
 
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_GAPPS=true
+CHERISH_NOGAPPS := true
 
 # Build info
 BUILD_FINGERPRINT := "full_oppo6769-user-10-QP1A.190711.020-68b77aba7cb33275-release-keys"
@@ -48,6 +47,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
-# Time
-LINEAGE_VERSION_APPEND_TIME_OF_DAY := true

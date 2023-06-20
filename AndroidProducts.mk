@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_RMX2020.mk
+    $(LOCAL_DIR)/cherish_RMX2020.mk
